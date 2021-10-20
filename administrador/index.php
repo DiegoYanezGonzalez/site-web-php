@@ -1,6 +1,15 @@
 <?php
+session_start();
 if($_POST){
+
+if(($_POST['usuario']=="admin")&&($_POST['contrasenia']=="sistema")){
+  $_SESSION['usuario']="ok";
+  $_SESSION['nombreUsuario']="admin";
   header('Location:inicio.php');
+
+}
+
+  
 }
 ?>
 
