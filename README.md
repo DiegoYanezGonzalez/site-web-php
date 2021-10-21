@@ -1,16 +1,16 @@
-# site-web-php
+# site-web-php  🚀
 
-#CRUD
+#CRUD 📋
 
-#InfinityFree Host
+#InfinityFree Host 🔧
 
-#FrontEnd
+#FrontEnd  ⌨️ 📦
 http://blogweb.lovestoblog.com/
 
-#BackOffice
+#BackOffice ⚙️ 🔩
 http://blogweb.lovestoblog.com/administrador
 
-user = dieg
+user = dieg 📌
 pass = 123123
 
 
