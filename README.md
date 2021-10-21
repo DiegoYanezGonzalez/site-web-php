@@ -11,7 +11,7 @@ http://blogweb.lovestoblog.com/
 http://blogweb.lovestoblog.com/administrador
 
 user = dieg 📌
-pass = 123123
+pass = 123XXX
 
 
 
