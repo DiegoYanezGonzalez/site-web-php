@@ -2,12 +2,16 @@
 session_start();
 if($_POST){
 
-if(($_POST['usuario']=="admin")&&($_POST['contrasenia']=="sistema")){
-  $_SESSION['usuario']="ok";
-  $_SESSION['nombreUsuario']="admin";
-  header('Location:inicio.php');
+  //Validation user
+if(($_POST['usuario']=="dieg")&&($_POST['contrasenia']=="123123")){
 
-}
+    $_SESSION['usuario']="ok";
+    $_SESSION['nombreUsuario']="dieg";
+    header('Location:inicio.php');
+
+  }else{
+    $mensaje="Error: El usuario y contraseña son incorrectos";
+  }
 
   
 }
@@ -38,7 +42,11 @@ if(($_POST['usuario']=="admin")&&($_POST['contrasenia']=="sistema")){
                     Login
                 </div>
                 <div class="card-body">
-                  
+                  <?php if(isset($mensaje )){ ?>
+                    <div class="alert alert-danger" role="alert">
+                      <?php echo $mensaje;?>
+                  </div>
+                  <?php }?>
                     <form method="POST">
                     <div class = "form-group">
                     <label>Usuario</label>
